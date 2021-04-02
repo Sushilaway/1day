@@ -4,10 +4,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
 
 
 </head>
 <body>
-    <h1> This is dashboard</h1>
+    <div class="navigation">
+        <ul>
+            
+            <li>
+                <a href="../index.html"
+                <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span class="title">Home</span>
+                </a>
+
+            </li>
+
+         
+            <li>
+                <a href="#"
+                <span class="icon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
+                <span class="title">Products</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="#"
+                <span class="icon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                <span class="title">Setting</span>
+                </a>
+
+            </li>
+ 
+            <li>
+                <a href="#"
+                <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                <span class="title">Help</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="#"
+                <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                <span class="title">Message</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="#"
+                <span class="icon"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+                <span class="title">Password</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="#"
+                <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                <span class="title">Signout</span>
+                </a>
+
+            </li>
+        </ul> 
+         
+
+    </div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+     function toggleMenu(){
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.navigation');
+        navigation.classlist.toggle('active');
+        toggle.classlist.toggle('active');
+     }
+    </script>
 </body>
 </html>
